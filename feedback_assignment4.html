@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+
+
+
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback</title>
+
+<script type = "text/javascript">
+function validate() {
+
+ if(document.FEEDBACK.CaseID.value == "" ) 
+	{
+            alert( "Please fill out Case ID!" );
+            document.FEEDBACK.CaseID.focus() ;
+            return false;
+	}
+
+ if(document.FEEDBACK.Subject.value == "" ) 
+	{
+            alert( "Please fill out subject!" );
+            document.FEEDBACK.Subject.focus() ;
+            return false;
+
+	}
+
+ if(document.FEEDBACK.Comment.value == "") 
+	{
+	    alert("Please provide a comment!" );
+	    document.FEEDBACK.Comment.focus() ;
+	    return false; 
+	}
+
+    return( true );
+      }
+
+</script>
+
+<style>
+
+	.container{
+			float: inherit; 
+			width:100%;
+			background-color: maroon;
+			margin: auto;
+			padding: 1px;
+
+		}
+
+
+	.header-container header{
+			background-color : white;
+			color: white; 
+			height: auto;
+			border: 2px solid maroon;	
+		}
+
+
+		#content{
+			background-color: beige;
+			width: 60%;
+			float: right;
+			padding-top: 30px;
+			padding-left: 50px;
+			padding-bottom: 100px;
+			margin-right: 50px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+
+	#sidemenu{
+			width: 50%;
+			position: top-left: 
+			background-color: maroon;
+			display: block; 
+			height: auto; 
+		} 
+
+	a{
+            		color: goldenrod;
+       		 }
+        
+
+	#form{
+			width: 40%;
+			background-color:  pink;
+            		height: auto;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 30px;
+			padding-right: 200px;
+			padding-top: 20px;
+			padding-left: 150px;
+			padding-bottom: 50px;
+		} 
+
+	.main-container{
+			width: 100%;
+			margin: auto; 
+			background-color: maroon;
+		}	
+		
+
+	.footer-container{
+			clear : both;
+			background-color : #FBEEEE;
+			padding : 10px;
+			color: black;
+			border: 2px solid maroon;
+		}    
+
+		body{
+           		 background-repeat: repeat;
+			 background-image: url("bg2.gif");
+           		 padding-left: 100px;
+           		 padding-right: 100px;
+           		 padding-bottom: 500px;
+		}
+
+	.clear-fix{
+			clear : both;
+		}
+		
+</style>
+
+
+</head>
+
+<body>
+
+
+
+	<div class="main=container">
+
+	<div class="container">
+
+	<div class="header-container">
+			<header>
+			<h2><img src="UMDLogo.jpg" alt="UMD Logo" style="width:200px; height:100px;"</h2>
+			</header>
+		</div>
+
+<div class="main-container">
+			<div id="content">
+			<header><b>Please complete the following form</b></header>
+			
+
+<aside id="form">
+
+
+<b><legendclass="legend" style="font-family:Cambria; color:darkred">FEEDBACK</legend></b>
+<form name="FEEDBACK" action="thankyou.html" onsubmit="return validate()" method="post">
+
+<table>
+<th></th>
+<th></th>
+
+<tr>
+<td><b><label for="CaseID">CaseID</label></b></td>
+<td style="width:60%"><input type="text" placeholder=34564 name="CaseID"></td>
+</tr>
+
+<tr>
+<td><b><label for="Subject">Subject:<font color="red">*</label></b></td>
+<td style="width:60%"><input type="text" name="Subject" size="50"></td>
+</tr>
+
+<tr valign="top">
+<td><b><label for="Comment">Comment<font color="red">*</label></b></td>
+<td><textarea rows = "10" cols = "30" name = "Comment"></textarea></td>
+</tr>
+
+<tr>
+<td rowspan="3"  valign="top">
+<b><label for"Submit"></label></b>
+<td><input type="image" src="btn_submit.gif" alt="Submit"></td>
+
+</tr>
+
+
+</form>
+</table>
+</aside>
+</div>
+
+
+<aside id="sidemenu">
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspPayroll Information</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspPerformance Appraisal</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspTimeSheet</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspLeave Management</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspHealth benefits</a></h3>
+	<h3><a href="orgchart_assignment4.html"><img src="arrow.gif" alt="arrow">&nbspOrganization Chart</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspAccess Management</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspCareer Development</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspMy Profile</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspExpense Reimbursement</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspRetirement Planning</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspTicket Management</a></h3>
+	<h3><a href="#"><img src="arrow.gif" alt="arrow">&nbspDocuments</a></h3>
+	<h3><a href="feedback_assignment4"><img src="arrow.gif" alt="arrow">&nbspFeedback</a></h3>
+		</aside>
+
+
+<div class="footer-container">
+		<footer> <div><center>Copyright &copy UMD. All Rights Reserved.</center></div></footer>
+		
+
+</div>
+</div>
+
+</body>
+</html>
